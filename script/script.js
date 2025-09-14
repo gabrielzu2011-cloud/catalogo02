@@ -1,7 +1,7 @@
 const products = [
   {
     name: "Producto # 01",
-    img: "FLIGHT-CASE05.png",
+    img: "img/FLIGHT-CASE05.png",
     leftTitle: "Protección Superior",
     leftText: "Case resistente con acabados premium y diseño moderno.",
     rightTitle: "Detalles Técnicos",
@@ -9,7 +9,7 @@ const products = [
   },
   {
     name: "Producto # 02",
-    img: "FLIGHT-CASE08.png",
+    img: "img/FLIGHT-CASE08.png",
     leftTitle: "Estilo Elegante",
     leftText: "Diseño sofisticado que combina funcionalidad y estética.",
     rightTitle: "Características",
@@ -17,7 +17,7 @@ const products = [
   },
   {
     name: "Producto # 03",
-    img: "FLIGHT-CASE.PNG",
+    img: "img/FLIGHT-CASE.PNG",
     leftTitle: "Durabilidad Extrema",
     leftText: "Soporta golpes y caídas sin dañar el dispositivo.",
     rightTitle: "Especificaciones",
@@ -25,7 +25,7 @@ const products = [
   },
   {
     name: "Producto # 04",
-    img: "FLIGHT_CASE01PNG.png",
+    img: "img/FLIGHT_CASE01PNG.png",
     leftTitle: "Durabilidad Extrema",
     leftText: "Soporta golpes y caídas sin dañar el dispositivo.",
     rightTitle: "Especificaciones",
