@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #0c0c0c 50%, #1a1a1a 50%);
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Menú */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Hero */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  position: relative;
+}
+
+/* Texto lateral */
+.text-left,
+.text-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bfbfbf;
+}
+
+.text-left {
+  left: 60px;
+  text-align: left;
+  border-left: 2px solid #444;
+  padding-left: 15px;
+}
+
+.text-right {
+  right: 60px;
+  text-align: right;
+  border-right: 2px solid #444;
+  padding-right: 15px;
+}
+
+.text-left h3,
+.text-right h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.text-left p,
+.text-right p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Slider */
+.product-slider {
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.product-name {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  top: -15%;
+  left: 20%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.product-slider img {
+  max-height: 400px;
+  z-index: 5;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+.product-slider img:hover {
+  transform: scale(1.05);
+}
+
+/* Botones */
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 5px 15px;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.header-top .container a{
+    position: absolute;
+    top: 50px;
+    left: 35%;
+    font-size: 18px;
+    
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 100px 20px 40px;
+    text-align: center;
+  }
+
+  .text-left,
+  .text-right {
+    position: relative;
+    transform: none;
+    top: auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .product-name {
+    font-size: 3rem;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-bottom: 20px;
+  }
+  .header-top .container a{
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    font-size: 18px;
+    
+
+}
+  }
+
+/* Móviles */
+@media (max-width: 768px) {
+  .navbar ul {
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+
+  .product-slider img {
+    max-height: 300px;
+  }
+
+  .controls button {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+
+  .text-left h3,
+  .text-right h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .text-left p,
+  .text-right p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: 60px;
+  }
+
+    .header-top .container a{
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    font-size: 16px;
+    
+
+}
+
+  
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  .product-slider img {
+    max-height: 220px;
+  }
+
+  .product-name {
+    font-size: 2rem;
+  }
+
+  .controls button {
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+
+    
+}
+
+@media (max-width: 520px) {
+ .header-top .container a{
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    font-size: 14px;
+    
+
+}
+}
